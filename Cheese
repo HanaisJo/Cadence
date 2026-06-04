@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | IC Design Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #212529;
+            --primary-color: #0056b3; /* Sleek engineering blue */
+            --card-bg: #ffffff;
+            --border-color: #e9ecef;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            color: #6c757d;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.3rem;
+            color: var(--primary-color);
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .project-title {
+            margin-top: 0;
+            color: #111;
+        }
+
+        .meta-tags {
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            background-color: #e2e8f0;
+            color: #4a5568;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-right: 0.5rem;
+            display: inline-block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        table, th, td {
+            border: 1px solid var(--border-color);
+        }
+
+        th, td {
+            padding: 0.6rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f1f3f5;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.02);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+        <p>VLSI / IC Design Engineer | Cadence Specialist</p>
+        <p style="font-size: 0.9rem;"><a href="mailto:your.email@example.com">Email</a> • <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
+    </header>
+
+    <div class="container">
+        
+        <h2>About Me</h2>
+        <p>Brief summary of your background, technical skills, and what technologies you love working with (e.g., Analog/Mixed-Signal, Digital Layout, FinFET, etc.).</p>
+
+        <h2>Projects</h2>
+
+        <!-- PROJECT START -->
+        <div class="project-card">
+            <h3 class="project-title">Project 1: Two-Stage Operational Amplifier</h3>
+            <div class="meta-tags">
+                <span class="tag">Cadence Virtuoso</span>
+                <span class="tag">Spectre</span>
+                <span class="tag">gpdk 180nm</span>
+            </div>
+            
+            <p>Designed and laid out a high-gain, low-power operational amplifier with Miller compensation. Achieved robust phase margin across PVT corners.</p>
+            
+            <table>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Target</th>
+                    <th>Achieved</th>
+                </tr>
+                <tr>
+                    <td>Gain</td>
+                    <td>&gt; 60 dB</td>
+                    <td>64.5 dB</td>
+                </tr>
+                <tr>
+                    <td>Phase Margin</td>
+                    <td>&gt; 60°</td>
+                    <td>62.1°</td>
+                </tr>
+            </table>
+
+            <div class="gallery">
+                <!-- Replace 'schematic.png' with your actual image file names uploaded to GitHub -->
+                <img src="schematic.png" alt="Schematic Capture">
+                <img src="layout.png" alt="IC Layout Grid">
+                <img src="waveform.png" alt="Simulation Transient Response">
+            </div>
+        </div>
+        <!-- PROJECT END -->
+
+        <!-- Duplicate the block above for Project 2, Project 3, etc. -->
+
+    </div>
+
+    <footer>
+        <p>© 2026 Your Name. Built with GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
