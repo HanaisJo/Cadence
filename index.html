@@ -3,199 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Hyun Ha Jo | IC Design </title>
-    <style>
-        :root {
-            --bg-color: #f8f9fa;
-            --text-color: #212529;
-            --primary-color: #0056b3; /* Sleek engineering blue */
-            --card-bg: #ffffff;
-            --border-color: #e9ecef;
-        }
+    <title>Hyun Ha Jo | IC Design Engineer</title>
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            line-height: 1.6;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: var(--card-bg);
-            border-bottom: 1px solid var(--border-color);
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            color: var(--primary-color);
-            font-size: 2.5rem;
-        }
-
-        header p {
-            margin: 0.5rem 0 0 0;
-            color: #6c757d;
-            font-size: 1.1rem;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        h2 {
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 0.3rem;
-            color: var(--primary-color);
-        }
-
-        .project-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        .project-title {
-            margin-top: 0;
-            color: #111;
-        }
-
-        .meta-tags {
-            margin-bottom: 1rem;
-        }
-
-        .tag {
-            background-color: #e2e8f0;
-            color: #4a5568;
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            font-weight: bold;
-            margin-right: 0.5rem;
-            display: inline-block;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1rem 0;
-        }
-
-        table, th, td {
-            border: 1px solid var(--border-color);
-        }
-
-        th, td {
-            padding: 0.6rem;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f1f3f5;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: 200px;
-            /* Using 'contain' and dark backgrounds preserves the widescreen aspect ratio of Cadence windows without squishing or cutting them */
-            object-fit: contain;
-            background-color: #0b0f19;
-            border-radius: 6px;
-            border: 1px solid var(--border-color);
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.02);
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #6c757d;
-            font-size: 0.9rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <h1> Hyun Ha Jo </h1>
-        <p> IC Design Engineer | Cadence Specialist</p>
-        <p style="font-size: 0.9rem;"><a href="mailto:hana_jo@web.de">Email</a> • <a href="https://linkedin.com/in/hanajo0725" target="_blank">LinkedIn</a></p>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">HHJ</div>
+
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+
+        <h1>Hyun Ha Jo</h1>
+
+        <p class="hero-subtitle">
+            IC Design Engineer • Analog Layout • Verification
+        </p>
+
+        <p class="hero-description">
+            Electrical Engineering Master's candidate specializing in
+            IC design methodologies, circuit analysis, analog layout,
+            DRC/LVS verification, and semiconductor characterization.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="resume.pdf" class="btn btn-primary">
+                Download Resume
+            </a>
+
+            <a href="https://linkedin.com/in/hanajo0725"
+               target="_blank"
+               class="btn btn-secondary">
+                LinkedIn
+            </a>
+        </div>
+
     </header>
 
-    <div class="container">
-        
-        <h2>About Me</h2>
-        <p> An analytical Electrical Engineering Master’s candidate specializing in IC design methodologies,
-circuit analysis, and semiconductor verification. Combines practical industry experience in technical
-documentation and workflow analysis with hands-on research in analog layout, DRC/LVS
-verification, and device characterization. Seeking a challenging EDA or design methodology role to
-solve complex technical problems and drive career progression.
-  </p>
+    <main class="container">
 
-        <h2>Projects</h2>
+        <!-- About -->
+        <section id="about">
 
-        <!-- PROJECT START -->
-        <div class="project-card">
-            <h3 class="project-title">Project 1: D-Flipflop</h3>
-            <div class="meta-tags">
-                <span class="tag">Cadence Virtuoso</span>
-                <span class="tag">Schematic</span>
-                <span class="tag">gpdk 180nm</span>
+            <h2 class="section-title">About Me</h2>
+
+            <p>
+                I am an Electrical Engineering Master's candidate with
+                a strong interest in integrated circuit design,
+                semiconductor verification, and EDA methodologies.
+                My experience includes schematic design, analog layout,
+                DRC/LVS verification, and device characterization using
+                Cadence Virtuoso.
+            </p>
+
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills">
+
+                <span class="skill">Cadence Virtuoso</span>
+                <span class="skill">Spectre</span>
+                <span class="skill">Analog Layout</span>
+                <span class="skill">DRC/LVS</span>
+                <span class="skill">IC Design</span>
+                <span class="skill">Verilog</span>
+                <span class="skill">Python</span>
+                <span class="skill">MATLAB</span>
+                <span class="skill">Linux</span>
+
             </div>
-            
-            <p>Designed and laid out a high-gain, low-power operational amplifier with Miller compensation. Achieved robust phase margin across PVT corners.</p>
-            
-            <table>
-                <tr>
-                    <th>Parameter</th>
-                    <th>Target</th>
-                    <th>Achieved</th>
-                </tr>
-                <tr>
-                    <td>Gain</td>
-                    <td>&gt; 60 dB</td>
-                    <td>64.5 dB</td>
-                </tr>
-                <tr>
-                    <td>Phase Margin</td>
-                    <td>&gt; 60&deg;</td>
-                    <td>62.1&deg;</td>
-                </tr>
-            </table>
 
-            <div class="gallery">
-                <!-- Pointing code paths securely toward your 'images' subfolder for clean asset management -->
-                <img src="images/schematic.png" alt="Schematic Capture">
-                <img src="images/layout.png" alt="IC Layout Grid">
-                <img src="images/waveform.png" alt="Simulation Transient Response">
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+
+            <h2 class="section-title">Projects</h2>
+
+            <div class="project-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+
+                    <img src="images/schematic.png"
+                         alt="D Flip-Flop Design">
+
+                    <div class="project-content">
+
+                        <div class="tags">
+                            <span>Cadence</span>
+                            <span>180nm</span>
+                            <span>Layout</span>
+                        </div>
+
+                        <h3>Static CMOS D Flip-Flop Design</h3>
+
+                        <p>
+                            Designed and verified a D Flip-Flop using
+                            Cadence Virtuoso in GPDK 180nm technology.
+                            Completed schematic capture, layout,
+                            LVS/DRC verification, and transient analysis.
+                        </p>
+
+                        <div class="metrics">
+
+                            <div class="metric">
+                                <strong>Technology</strong>
+                                <p>180nm</p>
+                            </div>
+
+                            <div class="metric">
+                                <strong>Verification</strong>
+                                <p>DRC/LVS Clean</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+
+                    <img src="images/layout.png"
+                         alt="Operational Amplifier">
+
+                    <div class="project-content">
+
+                        <div class="tags">
+                            <span>Analog</span>
+                            <span>Layout</span>
+                            <span>Cadence</span>
+                        </div>
+
+                        <h3>Two-Stage Operational Amplifier</h3>
+
+                        <p>
+                            Designed and analyzed a two-stage operational
+                            amplifier with Miller compensation. Evaluated
+                            gain, phase margin, and stability across
+                            simulation conditions.
+                        </p>
+
+                        <div class="metrics">
+
+                            <div class="metric">
+                                <strong>Gain</strong>
+                                <p>64.5 dB</p>
+                            </div>
+
+                            <div class="metric">
+                                <strong>PM</strong>
+                                <p>62.1°</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+
+                    <img src="images/waveform.png"
+                         alt="Verification Flow">
+
+                    <div class="project-content">
+
+                        <div class="tags">
+                            <span>Verification</span>
+                            <span>LVS</span>
+                            <span>DRC</span>
+                        </div>
+
+                        <h3>Analog Layout Verification Flow</h3>
+
+                        <p>
+                            Implemented layout verification workflows
+                            including DRC, LVS, and parasitic extraction
+                            for analog integrated circuit blocks.
+                        </p>
+
+                        <div class="metrics">
+
+                            <div class="metric">
+                                <strong>DRC</strong>
+                                <p>Passed</p>
+                            </div>
+
+                            <div class="metric">
+                                <strong>LVS</strong>
+                                <p>Matched</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
-        </div>
-        <!-- PROJECT END -->
 
-        <!-- Duplicate the block above for Project 2, Project 3, etc. -->
+        </section>
 
-    </div>
+        <!-- Contact -->
+        <section id="contact">
+
+            <h2 class="section-title">Contact</h2>
+
+            <p>
+                Email:
+                <a href="mailto:hana_jo@web.de">
+                    hana_jo@web.de
+                </a>
+            </p>
+
+            <p>
+                LinkedIn:
+                <a href="https://linkedin.com/in/hanajo0725"
+                   target="_blank">
+                    linkedin.com/in/hanajo0725
+                </a>
+            </p>
+
+        </section>
+
+    </main>
 
     <footer>
-        <p>&copy; 2026 Your Name. Built with GitHub Pages.</p>
+        © 2026 Hyun Ha Jo • Built with GitHub Pages
     </footer>
 
 </body>
