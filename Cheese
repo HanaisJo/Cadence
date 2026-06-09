@@ -110,9 +110,11 @@
 
         .gallery img {
             width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 4px;
+            height: 200px;
+            /* Using 'contain' and dark backgrounds preserves the widescreen aspect ratio of Cadence windows without squishing or cutting them */
+            object-fit: contain;
+            background-color: #0b0f19;
+            border-radius: 6px;
             border: 1px solid var(--border-color);
             cursor: pointer;
             transition: transform 0.2s;
@@ -169,16 +171,16 @@
                 </tr>
                 <tr>
                     <td>Phase Margin</td>
-                    <td>&gt; 60°</td>
-                    <td>62.1°</td>
+                    <td>&gt; 60&deg;</td>
+                    <td>62.1&deg;</td>
                 </tr>
             </table>
 
             <div class="gallery">
-                <!-- Replace 'schematic.png' with your actual image file names uploaded to GitHub -->
-                <img src="schematic.png" alt="Schematic Capture">
-                <img src="layout.png" alt="IC Layout Grid">
-                <img src="waveform.png" alt="Simulation Transient Response">
+                <!-- Pointing code paths securely toward your 'images' subfolder for clean asset management -->
+                <img src="images/schematic.png" alt="Schematic Capture">
+                <img src="images/layout.png" alt="IC Layout Grid">
+                <img src="images/waveform.png" alt="Simulation Transient Response">
             </div>
         </div>
         <!-- PROJECT END -->
@@ -188,7 +190,7 @@
     </div>
 
     <footer>
-        <p>© 2026 Your Name. Built with GitHub Pages.</p>
+        <p>&copy; 2026 Your Name. Built with GitHub Pages.</p>
     </footer>
 
 </body>
